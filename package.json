@@ -1,0 +1,51 @@
+{
+  "name": "eway-rapid",
+  "version": "1.0.0",
+  "description": "eWAY Rapid Node.JS library",
+  "keywords": [
+    "eway",
+    "rapid",
+    "payments",
+    "credit cards"
+  ],
+  "author": "eWAY (https://www.eway.com.au)",
+  "homepage": "http://github.com/eWAYPayment/eway-rapid-node",
+  "license": "MIT",
+  "main": "lib/Rapid.js",
+  "scripts": {
+    "lint": "jshint lib tests",
+    "test": "blue-tape tests/unit/**/*.test.js | faucet",
+    "test:coverage": "istanbul cover blue-tape -- tests/unit/**/*.test.js",
+    "test:integration": "blue-tape tests/integration/**/*.test.js | faucet",
+    "doc": "jsdoc -c jsdoc.conf.json",
+    "clean": "rimraf coverage docs",
+    "pretest": "npm run lint",
+    "pretest:coverage": "npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eWAYPayment/eway-rapid-node"
+  },
+  "bugs": "https://github.com/eWAYPayment/eway-rapid-node/issues",
+  "engines": {
+    "node": ">= v0.10.0"
+  },
+  "dependencies": {
+    "bluebird": "^2.9.34",
+    "express-uri-template": "^0.1.0",
+    "lodash": "^3.10.0",
+    "request-promise": "^0.4.3"
+  },
+  "devDependencies": {
+    "blue-tape": "^0.1.10",
+    "dotenv": "^1.2.0",
+    "faucet": "0.0.1",
+    "istanbul": "^0.3.17",
+    "jsdoc": "^3.3.2",
+    "jshint": "^2.8.0",
+    "nock": "^2.10.0",
+    "rewire": "^2.3.4",
+    "rimraf": "^2.4.2",
+    "sinon": "^1.15.4"
+  }
+}

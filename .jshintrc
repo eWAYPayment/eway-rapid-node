@@ -1,0 +1,16 @@
+{
+  "curly": true,
+  "eqeqeq": true,
+  "funcscope": true,
+  "latedef": true,
+  "noarg": true,
+  "nocomma": true,
+  "nonbsp": true,
+  "nonew": true,
+  "singleGroups": true,
+  "undef": true,
+  "unused": true,
+  "eqnull": true,
+  "expr": true,
+  "node": true
+}
