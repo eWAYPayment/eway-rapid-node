@@ -63,6 +63,7 @@ test('Client', function (t) {
 
     ServiceMock.postCancelAuthorisation = sinon.stub().withArgs(request.transactionId).returns(Promise.resolve(response.postCancelAuthorisation));
 
+    ServiceMock.getSettlementSearch = sinon.stub().withArgs(request.settlementSearchQueryBasic).returns(Promise.resolve(response.getSettlementSearchBasic));
     /*
      * Inject mocked service
      */
@@ -540,6 +541,31 @@ test('Client', function (t) {
     fulfilledTestCases.forEach(function (testCase) {
       t.test('should return a fulfilled promise', function (t) {
         return client.cancelTransaction.apply(client, testCase.args)
+          .then(function (response) {
+            t.plan(5);
+            t.ok(response instanceof Model, 'should be an instance of Model');
+            t.ok(typeof response.getErrors === 'function', 'should has method getErrors');
+            t.ok(response.getErrors() instanceof Array, 'should be an Array');
+            t.ok(response.getErrors().length === 0, 'should be empty');
+            t.deepEqual(response.attributes, testCase.expected);
+            return response;
+          })
+          ;
+      });
+    });
+  });
+  t.test('#settlementSearch', function (t) {
+    var client = setup();
+    var fulfilledTestCases = [
+      {
+        args: [request.settlementSearchQueryBasic],
+        expected: response.getSettlementSearchBasic
+      }
+    ];
+
+    fulfilledTestCases.forEach(function (testCase) {
+      t.test('should return a fulfilled promise', function (t) {
+        return client.settlementSearch.apply(client, testCase.args)
           .then(function (response) {
             t.plan(5);
             t.ok(response instanceof Model, 'should be an instance of Model');

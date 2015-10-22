@@ -34,7 +34,7 @@
     "bluebird": "^2.9.34",
     "express-uri-template": "^0.1.0",
     "lodash": "^3.10.0",
-    "request-promise": "^0.4.3"
+    "request-promise": "^1.0.1"
   },
   "devDependencies": {
     "blue-tape": "^0.1.10",
