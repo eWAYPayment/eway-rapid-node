@@ -1,7 +1,7 @@
 {
   "name": "eway-rapid",
-  "version": "1.0.0",
-  "description": "eWAY Rapid Node.JS library",
+  "version": "1.1.0",
+  "description": "eWAY Rapid Node.js library",
   "keywords": [
     "eway",
     "rapid",
