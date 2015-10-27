@@ -1018,4 +1018,60 @@ response.postCancelAuthorisation = {
   "Errors": ""
 };
 
+response.getSettlementSearchBasic = {
+    "SettlementSummaries": [{
+        "SettlementID": "53e78b14-ac2c-4b1b-a099-a12c6d5f30bc",
+        "Currency": "36",
+        "CurrencyCode": "AUD",
+        "TotalCredit": 97100,
+        "TotalDebit": 320,
+        "TotalBalance": 96780,
+        "BalancePerCardType": [{
+            "CardType": "VI",
+            "NumberOfTransactions": 14,
+            "Credit": 97100,
+            "Debit": 320,
+            "Balance": 96780
+        }]
+    }],
+    "SettlementTransactions": [{
+        "SettlementID": "53e78b14-ac2c-4b1b-a099-a12c6d5f30bc",
+        "eWAYCustomerID": 87654321,
+        "Currency": "36",
+        "CurrencyCode": "AUD",
+        "TransactionID": 11258912,
+        "TxnReference": "0000000011258912",
+        "CardType": "VI",
+        "Amount": 100,
+        "TransactionType": "1",
+        "TransactionDateTime": "\/Date(1422795600000)\/",
+        "SettlementDateTime": "\/Date(1422795600000)\/"
+    }, {
+        "SettlementID": "53e78b14-ac2c-4b1b-a099-a12c6d5f30bc",
+        "eWAYCustomerID": 87654321,
+        "Currency": "36",
+        "CurrencyCode": "AUD",
+        "TransactionID": 11259196,
+        "TxnReference": "0000000011259196",
+        "CardType": "VI",
+        "Amount": 1000,
+        "TransactionType": "1",
+        "TransactionDateTime": "\/Date(1422795600000)\/",
+        "SettlementDateTime": "\/Date(1422795600000)\/"
+    }, {
+        "SettlementID": "53e78b14-ac2c-4b1b-a099-a12c6d5f30bc",
+        "eWAYCustomerID": 87654321,
+        "Currency": "36",
+        "CurrencyCode": "AUD",
+        "TransactionID": 11260888,
+        "TxnReference": "0000000011260888",
+        "CardType": "VI",
+        "Amount": 1000,
+        "TransactionType": "8",
+        "TransactionDateTime": "\/Date(1422795600000)\/",
+        "SettlementDateTime": "\/Date(1422795600000)\/"
+    }],
+    "Errors": ""
+};
+
 module.exports = response;

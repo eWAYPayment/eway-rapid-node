@@ -2,6 +2,7 @@
 
 var TransactionType = require('../../lib/Rapid/Enum/TransactionType'),
   Payment = require('../../lib/Rapid/Enum/Payment'),
+  SettlementReportMode = require('../../lib/Rapid/Enum/SettlementReportMode'),
   request = {};
 
 request.directTransactionBasic = {
@@ -324,5 +325,11 @@ request.serviceUpdateCustomerTransparentRedirect = {
 request.refund = {"Refund": {"TransactionID": request.transactionId, "TotalAmount": 1000}};
 
 request.cancel = {TransactionID: request.transactionId};
+
+
+request.settlementSearchQueryBasic = {
+  "ReportMode": SettlementReportMode.BOTH,
+  "SettlementDate": "2015-10-01"
+};
 
 module.exports = request;
