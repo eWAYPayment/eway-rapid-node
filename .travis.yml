@@ -11,5 +11,5 @@ matrix:
   fast_finish: true
 
 script:
-  - npm test && npm test:integration
+  - npm test && npm run test:integration
 
