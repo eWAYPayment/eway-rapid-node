@@ -1,5 +1,9 @@
 # eWAY Rapid Node.js Library
 
+[![Latest version on npm][ico-version]][link-npm]
+[![Software License][ico-license]](LICENSE.md)
+[![Build Status][ico-travis]][link-travis]
+
 A Node.js library to integrate with eWAY's Rapid Payment API.
 
 Sign up with eWAY at:
@@ -77,3 +81,10 @@ $ npm run test:integration
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+
+[ico-version]: https://img.shields.io/npm/v/eway-rapid.svg?style=flat-square
+[ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/eWAYPayment/eway-rapid-node/master.svg?style=flat-square
+
+[link-npm]: https://www.npmjs.com/package/eway-rapid
+[link-travis]: https://travis-ci.org/eWAYPayment/eway-rapid-node
