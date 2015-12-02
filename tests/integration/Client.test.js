@@ -16,6 +16,8 @@ test('Client', function (t) {
 
   var convertToDot = function (object) {
 
+    var result = {};
+
     var convertRecursively = function (object, current) {
       for (var key in object) {
         if (object.hasOwnProperty(key)) {
@@ -29,8 +31,6 @@ test('Client', function (t) {
         }
       }
     };
-
-    var result = {};
     convertRecursively(object);
 
     return result;

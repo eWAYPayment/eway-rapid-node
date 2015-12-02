@@ -90,6 +90,20 @@ request.responsiveSharedPageCaptureOnTokenOff = {
 request.serviceResponsiveSharedPageCaptureOnTokenOff = request.responsiveSharedPageCaptureOnTokenOff;
 request.serviceResponsiveSharedPageCaptureOnTokenOff.Method = Payment.PROCESS_PAYMENT;
 
+request.responsiveSharedPageSaveCustomer = {
+  "Payment": {
+    "TotalAmount": 100
+  },
+  "RedirectUrl": "http://www.eway.com.au",
+  "CancelUrl": "http://www.eway.com.au",
+  "TransactionType": TransactionType.PURCHASE,
+  "Capture": true,
+  "SaveCustomer": true
+};
+
+request.serviceResponsiveSharedPageSaveCustomer = request.responsiveSharedPageSaveCustomer;
+request.serviceResponsiveSharedPageSaveCustomer.Method = Payment.TOKEN_PAYMENT;
+
 request.responsiveSharedPageCaptureOff = {
   "Payment": {
     "TotalAmount": 100
@@ -129,6 +143,19 @@ request.transparentRedirectCaptureOnTokenOff = {
 
 request.serviceTransparentRedirectCaptureOnTokenOff = request.transparentRedirectCaptureOnTokenOff;
 request.serviceTransparentRedirectCaptureOnTokenOff.Method = Payment.PROCESS_PAYMENT;
+
+request.transparentRedirectSaveCustomer = {
+  "Payment": {
+    "TotalAmount": 100
+  },
+  "RedirectUrl": "http://www.eway.com.au",
+  "TransactionType": TransactionType.PURCHASE,
+  "Capture": true,
+  "SaveCustomer": true
+};
+
+request.serviceTransparentRedirectSaveCustomer = request.transparentRedirectSaveCustomer;
+request.serviceTransparentRedirectSaveCustomer.Method = Payment.TOKEN_PAYMENT;
 
 request.transparentRedirectCaptureOff = {
   "Payment": {
