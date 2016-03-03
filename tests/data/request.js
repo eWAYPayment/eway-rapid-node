@@ -230,7 +230,7 @@ request.createCustomerDirectTransaction = {
 request.serviceCreateCustomerDirectTransaction = {
   Customer: request.createCustomerDirectTransaction,
   Method: Payment.CREATE_TOKEN_CUSTOMER,
-  TransactionType: TransactionType.PURCHASE
+  TransactionType: TransactionType.MOTO
 };
 
 request.createCustomerResponsiveShared = {
@@ -252,7 +252,7 @@ request.createCustomerResponsiveShared = {
 request.serviceCreateCustomerResponsiveShared = {
   Customer: request.createCustomerResponsiveShared,
   Method: Payment.CREATE_TOKEN_CUSTOMER,
-  TransactionType: TransactionType.PURCHASE,
+  TransactionType: TransactionType.MOTO,
   RedirectUrl: request.createCustomerResponsiveShared.RedirectUrl,
   CancelUrl: request.createCustomerResponsiveShared.CancelUrl,
   Payment: {TotalAmount: 0}
@@ -276,7 +276,7 @@ request.createCustomerTransparentRedirect = {
 request.serviceCreateCustomerTransparentRedirect = {
   Customer: request.createCustomerTransparentRedirect,
   Method: Payment.CREATE_TOKEN_CUSTOMER,
-  TransactionType: TransactionType.PURCHASE,
+  TransactionType: TransactionType.MOTO,
   RedirectUrl: request.createCustomerTransparentRedirect.RedirectUrl,
   Payment: {TotalAmount: 0}
 };
@@ -302,7 +302,7 @@ request.serviceUpdateCustomerDirectTransaction = {
   Customer: request.updateCustomerDirectTransaction,
   Payment: {TotalAmount: 0},
   Method: Payment.UPDATE_TOKEN_CUSTOMER,
-  TransactionType: TransactionType.PURCHASE
+  TransactionType: TransactionType.MOTO
 };
 
 request.updateCustomerResponsiveShared = {
@@ -319,7 +319,7 @@ request.serviceUpdateCustomerResponsiveShared = {
     "TotalAmount": 0
   },
   "Method": "UpdateTokenCustomer",
-  "TransactionType": "Purchase",
+  "TransactionType": "MOTO",
   "RedirectUrl": "http://www.eway.com.au"
 };
 
@@ -342,7 +342,7 @@ request.serviceUpdateCustomerTransparentRedirect = {
     "RedirectUrl": "http://www.eway.com.au"
   },
   "Method": "UpdateTokenCustomer",
-  "TransactionType": "Purchase",
+  "TransactionType": "MOTO",
   "RedirectUrl": "http://www.eway.com.au",
   "Payment": {
     "TotalAmount": 0

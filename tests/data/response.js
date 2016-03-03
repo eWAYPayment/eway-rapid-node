@@ -167,7 +167,7 @@ response.postTransactionUpdateCustomer = {
   "ResponseMessage": "A2000",
   "TransactionID": null,
   "TransactionStatus": false,
-  "TransactionType": "Purchase",
+  "TransactionType": "MOTO",
   "BeagleScore": null,
   "Verification": {
     "CVN": 0,
