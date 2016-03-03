@@ -224,14 +224,14 @@
   "V6165": "Invalid Visa Checkout data or decryption failed",
   "V6170": "Invalid TransactionSearch, Invoice Number is not unique",
   "V6171": "Invalid TransactionSearch, Invoice Number not found",
-  "S9900": "eWAY library has encountered an unknown exception",
-  "S9901": "eWAY library has encountered an invalid JSON response from server",
-  "S9902": "eWAY library has encountered an empty response from server",
+  "S9901": "eWAY library has encountered an invalid JSON response from the gateway",
+  "S9902": "eWAY library has encountered an empty response from the gateway",
   "S9903": "eWAY library has encountered an unexpected method call",
   "S9904": "eWAY library has encountered invalid data provided to models",
-  "S9990": "eWAY library does not have an Endpoint initialised, or not initialise to a URL",
+  "S9990": "eWAY library does not have an Endpoint initialised, or not initialised to a URL",
   "S9991": "eWAY library does not have an API key or password initialised",
-  "S9992": "eWAY library has encountered an invalid API key or password",
-  "S9993": "eWAY library has encountered an error response from server",
-  "S9995": "eWAY library has encountered an invalid argument in method call"
+  "S9992": "eWAY library has encountered an unknown exception",
+  "S9993": "eWAY library has encountered an invalid API key or password",
+  "S9995": "eWAY library has encountered an invalid argument in method call",
+  "S9996": "eWAY library has encountered an error response from the gateway"
 }
