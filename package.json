@@ -33,17 +33,17 @@
   "dependencies": {
     "bluebird": "^2.10.2",
     "express-uri-template": "^0.1.0",
-    "lodash": "^3.10.1",
+    "lodash": "^4.17.5",
     "request-promise": "^2.0.1"
   },
   "devDependencies": {
     "blue-tape": "^0.1.10",
     "dotenv": "^1.2.0",
     "faucet": "0.0.1",
-    "istanbul": "^0.3.17",
+    "istanbul": "^0.4.5",
     "jsdoc": "^3.3.2",
     "jshint": "^2.8.0",
-    "nock": "^2.10.0",
+    "nock": "^12.0.3",
     "rewire": "^2.3.4",
     "rimraf": "^2.4.2",
     "sinon": "^1.15.4"
