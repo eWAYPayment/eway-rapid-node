@@ -1,6 +1,6 @@
 # eWAY Rapid Node.js Library
 
-[![Latest version on npm][ico-version]][link-npm]
+[![Latest Version on npm][ico-version]][link-npm]
 [![Software License][ico-license]](LICENSE.md)
 [![Build Status][ico-travis]][link-travis]
 
