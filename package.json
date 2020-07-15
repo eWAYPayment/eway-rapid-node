@@ -33,7 +33,7 @@
   "dependencies": {
     "bluebird": "^2.10.2",
     "express-uri-template": "^0.1.0",
-    "lodash": "^3.10.1",
+    "lodash": "^4.17.19",
     "request-promise": "^2.0.1"
   },
   "devDependencies": {
